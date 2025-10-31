@@ -1,0 +1,9 @@
+<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="favicon-title">
+  <title id="favicon-title">Backplane Logo</title>
+  <rect x="2" y="8" width="10" height="16" fill="#ffffff" rx="2"/>
+  <rect x="14" y="8" width="10" height="16" fill="#ffffff" rx="2"/>
+  <rect x="26" y="8" width="4" height="16" fill="#ffffff" rx="2"/>
+  <circle cx="7" cy="16" r="2" fill="#000000"/>
+  <circle cx="19" cy="16" r="2" fill="#000000"/>
+  <text x="16" y="20" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="4" font-weight="bold">BP</text>
+</svg>
