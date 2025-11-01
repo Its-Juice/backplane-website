@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Backplane Pricing - Flexible pricing plans for enterprise infrastructure solutions. Choose the plan that fits your business needs.">
-    <meta name="keywords" content="pricing, enterprise, infrastructure, cloud, security, managed services, plans">
+    <meta name="description" content="Backplane Pricing - Flexible enterprise infrastructure pricing plans designed to scale with your business needs.">
+    <meta name="keywords" content="infrastructure pricing, enterprise plans, scalable solutions, technology costs">
     <meta name="author" content="Backplane">
     <meta name="robots" content="index, follow">
     
@@ -12,14 +12,14 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://backplane.com/pricing">
     <meta property="og:title" content="Backplane Pricing - Enterprise Infrastructure Solutions">
-    <meta property="og:description" content="Flexible pricing plans for enterprise infrastructure solutions designed to scale with your business.">
+    <meta property="og:description" content="Flexible enterprise infrastructure pricing plans designed to scale with your business needs.">
     <meta property="og:image" content="assets/og-image.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://backplane.com/pricing">
     <meta property="twitter:title" content="Backplane Pricing - Enterprise Infrastructure Solutions">
-    <meta property="twitter:description" content="Flexible pricing plans for enterprise infrastructure solutions designed to scale with your business.">
+    <meta property="twitter:description" content="Flexible enterprise infrastructure pricing plans designed to scale with your business needs.">
     <meta property="twitter:image" content="assets/og-image.jpg">
 
     <!-- Theme and PWA -->
@@ -52,8 +52,31 @@
                         <li class="nav__item">
                             <a href="index.html" class="nav__link">Home</a>
                         </li>
-                        <li class="nav__item">
-                            <a href="services.html" class="nav__link">Services</a>
+                        <li class="nav__item nav__item--dropdown">
+                            <a class="nav__link nav__link--dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                            <ul class="nav__dropdown">
+                                <li class="nav__dropdown-item">
+                                    <a href="services/cloud.html" class="nav__dropdown-link">Cloud Infrastructure</a>
+                                </li>
+                                <li class="nav__dropdown-item">
+                                    <a href="services/infrastructure.html" class="nav__dropdown-link">IT Infrastructure</a>
+                                </li>
+                                <li class="nav__dropdown-item">
+                                    <a href="services/network.html" class="nav__dropdown-link">Network Solutions</a>
+                                </li>
+                                <li class="nav__dropdown-item">
+                                    <a href="services/security.html" class="nav__dropdown-link">Security Services</a>
+                                </li>
+                                <li class="nav__dropdown-item">
+                                    <a href="services/data.html" class="nav__dropdown-link">Data Management</a>
+                                </li>
+                                <li class="nav__dropdown-item">
+                                    <a href="services/management.html" class="nav__dropdown-link">IT Management</a>
+                                </li>
+                                <li class="nav__dropdown-item">
+                                    <a href="services/managed-services.html" class="nav__dropdown-link">Managed Services</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav__item">
                             <a href="pricing.html" class="nav__link" aria-current="page">Pricing</a>
@@ -83,7 +106,28 @@
                             <a href="index.html" class="mobile-nav__link">Home</a>
                         </li>
                         <li class="mobile-nav__item">
-                            <a href="services.html" class="mobile-nav__link">Services</a>
+                            <a href="services.html" class="mobile-nav__link">Services Overview</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="services/cloud.html" class="mobile-nav__link mobile-nav__link--sub">Cloud Infrastructure</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="services/infrastructure.html" class="mobile-nav__link mobile-nav__link--sub">IT Infrastructure</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="services/network.html" class="mobile-nav__link mobile-nav__link--sub">Network Solutions</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="services/security.html" class="mobile-nav__link mobile-nav__link--sub">Security Services</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="services/data.html" class="mobile-nav__link mobile-nav__link--sub">Data Management</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="services/management.html" class="mobile-nav__link mobile-nav__link--sub">IT Management</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="services/managed-services.html" class="mobile-nav__link mobile-nav__link--sub">Managed Services</a>
                         </li>
                         <li class="mobile-nav__item">
                             <a href="pricing.html" class="mobile-nav__link">Pricing</a>
@@ -107,10 +151,10 @@
             <div class="container">
                 <div class="page-header__content">
                     <h1 id="page-title" class="page-header__title">
-                        <span class="text-accent">Pricing</span> Plans
+                        Pricing <span class="text-accent">Plans</span>
                     </h1>
                     <p class="page-header__description">
-                        Choose the perfect plan for your business. All plans include 24/7 support, 99.9% uptime SLA, and enterprise-grade security.
+                        Flexible enterprise infrastructure pricing plans designed to scale with your business needs.
                     </p>
                 </div>
             </div>
@@ -120,204 +164,100 @@
         <section class="pricing-plans" aria-labelledby="pricing-title">
             <div class="container">
                 <div class="section-header">
-                    <h2 id="pricing-title" class="section-title">Enterprise Infrastructure Plans</h2>
+                    <h2 id="pricing-title" class="section-title">Choose Your Plan</h2>
                     <p class="section-description">
-                        Transparent pricing with no hidden fees. Scale up or down as your business grows.
+                        Transparent pricing with no hidden fees. Scale up or down as your business evolves.
                     </p>
                 </div>
 
                 <div class="pricing__grid">
-                    <!-- Starter Plan -->
                     <article class="pricing-card">
                         <div class="pricing-card__header">
                             <h3 class="pricing-card__name">Starter</h3>
                             <div class="pricing-card__price">
-                                <span class="pricing-card__amount">$2,999</span>
+                                <span class="pricing-card__amount">$2,499</span>
                                 <span class="pricing-card__period">/month</span>
                             </div>
                             <p class="pricing-card__description">
-                                Perfect for small to medium businesses ready to modernize their infrastructure.
+                                Perfect for growing businesses ready to scale their infrastructure.
                             </p>
                         </div>
+                        
                         <div class="pricing-card__features">
                             <h4 class="pricing-card__features-title">What's included:</h4>
                             <ul class="pricing-card__features-list">
-                                <li>Cloud infrastructure up to 50 instances</li>
-                                <li>Basic network security monitoring</li>
-                                <li>Standard data backup (daily)</li>
-                                <li>Business hours support (9AM-6PM)</li>
-                                <li>99.5% uptime SLA</li>
+                                <li>Cloud infrastructure setup</li>
+                                <li>Basic security monitoring</li>
+                                <li>24/7 support</li>
                                 <li>Monthly performance reports</li>
-                                <li>Basic compliance reporting</li>
+                                <li>99.9% uptime SLA</li>
                             </ul>
                         </div>
+                        
                         <div class="pricing-card__cta">
                             <a href="contact.html" class="btn btn--secondary">Get Started</a>
                         </div>
                     </article>
 
-                    <!-- Professional Plan -->
                     <article class="pricing-card pricing-card--featured">
                         <div class="pricing-card__badge">Most Popular</div>
                         <div class="pricing-card__header">
                             <h3 class="pricing-card__name">Professional</h3>
                             <div class="pricing-card__price">
-                                <span class="pricing-card__amount">$8,999</span>
+                                <span class="pricing-card__amount">$7,999</span>
                                 <span class="pricing-card__period">/month</span>
                             </div>
                             <p class="pricing-card__description">
-                                Advanced features for growing businesses with complex infrastructure needs.
+                                Advanced infrastructure solutions for established enterprises.
                             </p>
                         </div>
+                        
                         <div class="pricing-card__features">
                             <h4 class="pricing-card__features-title">Everything in Starter, plus:</h4>
                             <ul class="pricing-card__features-list">
-                                <li>Cloud infrastructure up to 200 instances</li>
-                                <li>Advanced security with threat detection</li>
-                                <li>Real-time data analytics</li>
-                                <li>24/7 priority support</li>
-                                <li>99.9% uptime SLA</li>
-                                <li>Multi-region deployment</li>
-                                <li>Advanced compliance management</li>
-                                <li>Disaster recovery planning</li>
-                                <li>Performance optimization</li>
+                                <li>Multi-cloud deployment</li>
+                                <li>Advanced security suite</li>
+                                <li>Dedicated account manager</li>
+                                <li>Weekly performance reports</li>
+                                <li>Priority support</li>
+                                <li>Custom integrations</li>
                             </ul>
                         </div>
+                        
                         <div class="pricing-card__cta">
                             <a href="contact.html" class="btn btn--primary">Get Started</a>
                         </div>
                     </article>
 
-                    <!-- Enterprise Plan -->
                     <article class="pricing-card">
                         <div class="pricing-card__header">
                             <h3 class="pricing-card__name">Enterprise</h3>
                             <div class="pricing-card__price">
                                 <span class="pricing-card__amount">Custom</span>
+                                <span class="pricing-card__period">pricing</span>
                             </div>
                             <p class="pricing-card__description">
-                                Tailored solutions for large enterprises with mission-critical infrastructure.
+                                Tailored solutions for large-scale enterprise requirements.
                             </p>
                         </div>
+                        
                         <div class="pricing-card__features">
                             <h4 class="pricing-card__features-title">Everything in Professional, plus:</h4>
                             <ul class="pricing-card__features-list">
-                                <li>Unlimited cloud infrastructure</li>
-                                <li>Enterprise security suite</li>
-                                <li>Custom integration development</li>
-                                <li>Dedicated account manager</li>
+                                <li>Custom infrastructure design</li>
+                                <li>White-glove implementation</li>
+                                <li>Dedicated support team</li>
+                                <li>Real-time reporting</li>
                                 <li>99.99% uptime SLA</li>
-                                <li>Global infrastructure support</li>
-                                <li>Advanced compliance frameworks</li>
-                                <li>On-site consultation included</li>
-                                <li>Custom SLA agreements</li>
-                                <li>Priority feature requests</li>
+                                <li>On-site consulting</li>
+                                <li>Custom development</li>
                             </ul>
                         </div>
+                        
                         <div class="pricing-card__cta">
                             <a href="contact.html" class="btn btn--secondary">Contact Sales</a>
                         </div>
                     </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Add-ons Section -->
-        <section class="add-ons" aria-labelledby="addons-title">
-            <div class="container">
-                <div class="section-header">
-                    <h2 id="addons-title" class="section-title">Add-on Services</h2>
-                    <p class="section-description">
-                        Enhance your plan with additional specialized services and support options.
-                    </p>
-                </div>
-
-                <div class="add-ons__grid">
-                    <article class="add-on">
-                        <h3 class="add-on__name">Premium Support</h3>
-                        <p class="add-on__price">+$1,500/month</p>
-                        <p class="add-on__description">
-                            24/7 dedicated support with 15-minute response time for critical issues.
-                        </p>
-                    </article>
-
-                    <article class="add-on">
-                        <h3 class="add-on__name">Advanced Security</h3>
-                        <p class="add-on__price">+$2,000/month</p>
-                        <p class="add-on__description">
-                            Enhanced security suite with penetration testing and compliance audits.
-                        </p>
-                    </article>
-
-                    <article class="add-on">
-                        <h3 class="add-on__name">Managed DevOps</h3>
-                        <p class="add-on__price">+$3,500/month</p>
-                        <p class="add-on__description">
-                            Complete DevOps management including CI/CD pipeline optimization.
-                        </p>
-                    </article>
-
-                    <article class="add-on">
-                        <h3 class="add-on__name">Data Analytics Pro</h3>
-                        <p class="add-on__price">+$2,500/month</p>
-                        <p class="add-on__description">
-                            Advanced analytics and business intelligence with custom dashboards.
-                        </p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section class="pricing-faq" aria-labelledby="faq-title">
-            <div class="container">
-                <div class="section-header">
-                    <h2 id="faq-title" class="section-title">Frequently Asked Questions</h2>
-                    <p class="section-description">
-                        Common questions about our pricing and services.
-                    </p>
-                </div>
-
-                <div class="faq__grid">
-                    <div class="faq__item">
-                        <h3 class="faq__question">Can I change plans at any time?</h3>
-                        <p class="faq__answer">Yes, you can upgrade or downgrade your plan at any time. Changes take effect at the beginning of your next billing cycle.</p>
-                    </div>
-
-                    <div class="faq__item">
-                        <h3 class="faq__question">What's included in the SLA?</h3>
-                        <p class="faq__answer">Our SLA covers system uptime, performance metrics, and response times. Enterprise plans include custom SLA agreements.</p>
-                    </div>
-
-                    <div class="faq__item">
-                        <h3 class="faq__question">Do you offer annual discounts?</h3>
-                        <p class="faq__answer">Yes, we offer 15% annual discounts and custom enterprise pricing for long-term commitments.</p>
-                    </div>
-
-                    <div class="faq__item">
-                        <h3 class="faq__question">Is there a setup fee?</h3>
-                        <p class="faq__answer">No setup fees for Starter and Professional plans. Enterprise implementations may include one-time setup costs.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Call to Action Section -->
-        <section class="cta" aria-labelledby="cta-title">
-            <div class="container">
-                <div class="cta__content">
-                    <h2 id="cta-title" class="cta__title">Ready to Get Started?</h2>
-                    <p class="cta__description">
-                        Schedule a free consultation to discuss your infrastructure needs and get a customized proposal.
-                    </p>
-                    <div class="cta__actions">
-                        <a href="contact.html" class="btn btn--primary">Schedule Consultation</a>
-                        <a href="services.html" class="btn btn--outline">View Services</a>
-                    </div>
-                    <div class="cta__contact-info">
-                        <p class="cta__phone">+1 (800) BACKPLANE</p>
-                        <p class="cta__email">sales@backplane.com</p>
-                    </div>
                 </div>
             </div>
         </section>
@@ -339,10 +279,13 @@
                         <div class="footer__nav-section">
                             <h3 class="footer__nav-title">Services</h3>
                             <ul class="footer__nav-list">
-                                <li><a href="services.html" class="footer__nav-link">Cloud Infrastructure</a></li>
-                                <li><a href="services.html" class="footer__nav-link">Network Security</a></li>
-                                <li><a href="services.html" class="footer__nav-link">Data Management</a></li>
-                                <li><a href="services.html" class="footer__nav-link">Managed Services</a></li>
+                                <li><a href="services/cloud.html" class="footer__nav-link">Cloud Infrastructure</a></li>
+                                <li><a href="services/security.html" class="footer__nav-link">Security Services</a></li>
+                                <li><a href="services/data.html" class="footer__nav-link">Data Management</a></li>
+                                <li><a href="services/managed-services.html" class="footer__nav-link">Managed Services</a></li>
+                                <li><a href="services/infrastructure.html" class="footer__nav-link">IT Infrastructure</a></li>
+                                <li><a href="services/network.html" class="footer__nav-link">Network Solutions</a></li>
+                                <li><a href="services/management.html" class="footer__nav-link">IT Management</a></li>
                             </ul>
                         </div>
 
@@ -372,8 +315,8 @@
                     <div class="footer__legal">
                         <p class="footer__copyright">© 2025 Backplane. All rights reserved.</p>
                         <ul class="footer__legal-links">
-                            <li><a href="#" class="footer__legal-link">Privacy Policy</a></li>
-                            <li><a href="#" class="footer__legal-link">Terms of Service</a></li>
+                            <li><a href="privacy_policy.html" class="footer__legal-link">Privacy Policy</a></li>
+                            <li><a href="tos.html" class="footer__legal-link">Terms of Service</a></li>
                             <li><a href="#" class="footer__legal-link">Cookie Policy</a></li>
                         </ul>
                     </div>
