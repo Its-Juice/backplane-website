@@ -132,8 +132,8 @@ body {
     font-weight: var(--font-weight-normal);
     line-height: var(--line-height-relaxed);
     color: var(--color-white);
-    background-color: var(--color-black);
-    background-image: radial-gradient(circle at 50% 50%, var(--color-gray-900) 0%, var(--color-black) 100%);
+    background-color: transparent;
+    background-image: none;
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -260,15 +260,15 @@ li {
     color: var(--color-accent);
 }
 
-/* Header - Full Width */
+/* Header - Full Width - Solid Black as Required */
 .header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.95);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    background: var(--color-black);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
     border-bottom: 1px solid var(--color-gray-800);
     z-index: var(--z-fixed);
     transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -379,8 +379,8 @@ li {
     left: 0;
     min-width: 250px;
     background: rgba(0, 0, 0, 0.98);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
     border: 1px solid var(--color-gray-700);
     border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow-xl);
@@ -484,13 +484,13 @@ li {
     color: var(--color-accent);
 }
 
-/* Service Page Specific Styles */
+/* Service Page Specific Styles - Dark Veil Background */
 .service-overview {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     padding: var(--space-20) 0;
-    background: var(--color-gray-900);
+    background: transparent;
 }
 
 .service-overview__content {
@@ -513,12 +513,13 @@ li {
     margin-bottom: var(--space-6);
 }
 
+/* Service Features - Dark Veil Background */
 .service-features {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     padding: var(--space-20) 0;
-    background: var(--color-black);
+    background: transparent;
 }
 
 .service-features__grid {
@@ -600,12 +601,13 @@ li {
 }
 
 /* Process Steps */
+/* Service Process - Dark Veil Background */
 .service-process {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     padding: var(--space-20) 0;
-    background: var(--color-gray-900);
+    background: transparent;
 }
 
 .process-steps {
@@ -697,8 +699,8 @@ li {
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.98);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
     border-bottom: 1px solid var(--color-gray-800);
     padding: var(--space-4) 0;
     opacity: 0;
@@ -744,13 +746,13 @@ li {
     min-height: 100vh;
 }
 
-/* Page Header - Full Width */
+/* Page Header - Dark Veil Background */
 .page-header {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     padding: var(--space-20) 0 var(--space-16);
-    background: var(--color-gray-900);
+    background: transparent;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -793,7 +795,7 @@ li {
     line-height: var(--line-height-relaxed);
 }
 
-/* Hero Section - Full Width with Background */
+/* Hero Section - Dark Veil Background */
 .hero {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
@@ -805,7 +807,7 @@ li {
     align-items: center;
     justify-content: center;
     min-height: calc(100vh - 4rem);
-    background: radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.03) 0%, transparent 70%);
+    background: transparent;
 }
 
 .hero::before {
@@ -815,7 +817,7 @@ li {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+    background: radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.03) 0%, transparent 70%);
     pointer-events: none;
 }
 
@@ -984,13 +986,13 @@ li {
     min-height: 52px;
 }
 
-/* Solutions Section - Full Width */
+/* Solutions Section - Dark Veil Background */
 .solutions {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     padding: var(--space-24) 0;
-    background: linear-gradient(180deg, var(--color-black) 0%, var(--color-gray-900) 100%);
+    background: transparent;
 }
 
 .section-header {
@@ -1134,13 +1136,13 @@ li {
     font-weight: var(--font-weight-bold);
 }
 
-/* Services Section - Full Width */
+/* Services Section - Dark Veil Background */
 .services-overview {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     padding: var(--space-20) 0;
-    background: var(--color-gray-900);
+    background: transparent;
 }
 
 .services__grid {
@@ -1263,13 +1265,13 @@ li {
     margin-top: var(--space-6);
 }
 
-/* Additional Services - Full Width */
+/* Additional Services - Dark Veil Background */
 .additional-services {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     padding: var(--space-20) 0;
-    background: var(--color-black);
+    background: transparent;
 }
 
 .additional-services__grid {
@@ -1308,13 +1310,13 @@ li {
     line-height: var(--line-height-relaxed);
 }
 
-/* Contact Section - Full Width */
+/* Contact Section - Dark Veil Background */
 .contact-section {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     padding: var(--space-20) 0;
-    background: var(--color-gray-900);
+    background: transparent;
 }
 
 .contact__grid {
@@ -1508,13 +1510,13 @@ li {
     font-size: var(--font-size-sm);
 }
 
-/* Pricing Section - Full Width */
+/* Pricing Section - Dark Veil Background */
 .pricing-plans {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     padding: var(--space-20) 0;
-    background: var(--color-gray-900);
+    background: transparent;
 }
 
 .pricing__grid {
@@ -1649,13 +1651,13 @@ li {
     flex-shrink: 0;
 }
 
-/* Add-ons - Full Width */
+/* Add-ons - Dark Veil Background */
 .add-ons {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     padding: var(--space-20) 0;
-    background: var(--color-black);
+    background: transparent;
 }
 
 .add-ons__grid {
@@ -1701,13 +1703,13 @@ li {
     line-height: var(--line-height-relaxed);
 }
 
-/* FAQ - Full Width */
+/* FAQ - Dark Veil Background */
 .pricing-faq {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     padding: var(--space-20) 0;
-    background: var(--color-gray-900);
+    background: transparent;
 }
 
 .faq__grid {
@@ -1737,13 +1739,13 @@ li {
     line-height: var(--line-height-relaxed);
 }
 
-/* CTA Section - Full Width */
+/* CTA Section - Dark Veil Background */
 .cta {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     padding: var(--space-24) 0;
-    background: var(--color-gray-900);
+    background: transparent;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -2535,10 +2537,10 @@ li {
     animation: fadeInUp 800ms ease-out 300ms both;
 }
 
-/* Value Propositions Section */
+/* Value Propositions Section - Dark Veil Background */
 .value-props {
     padding: var(--space-20) 0;
-    background: var(--color-gray-900);
+    background: transparent;
     position: relative;
 }
 
@@ -2689,10 +2691,10 @@ li {
     align-items: flex-start;
 }
 
-/* Trust Indicators */
+/* Trust Indicators - Dark Veil Background */
 .trust-indicators {
     padding: var(--space-16) 0;
-    background: var(--color-black);
+    background: transparent;
     border-top: 1px solid var(--color-gray-800);
     border-bottom: 1px solid var(--color-gray-800);
 }
@@ -2740,11 +2742,11 @@ li {
     letter-spacing: var(--letter-spacing-wide);
 }
 
-/* CTA - Clean Mode */
+/* CTA - Clean Mode - Dark Veil Background */
 .cta--clean {
     padding: var(--space-24) 0;
     text-align: center;
-    background: var(--color-gray-900);
+    background: transparent;
     position: relative;
     overflow: hidden;
 }
@@ -2929,10 +2931,10 @@ li {
     /* Already dark by default, but can add enhancements here */
 }
 
-/* About Page Styles */
+/* About Page Styles - Dark Veil Background */
 .about-content {
     padding: var(--space-20) 0;
-    background: var(--color-gray-900);
+    background: transparent;
 }
 
 .about-content__grid {
