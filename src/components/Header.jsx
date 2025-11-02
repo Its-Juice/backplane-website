@@ -13,10 +13,6 @@ function Header() {
     setIsMobileMenuOpen(false);
   };
 
-  const isActive = (path) => {
-    return location.pathname === path ? 'aria-current="page"' : '';
-  };
-
   return (
     <>
       <a href="#main-content" className="skip-link">Skip to main content</a>
@@ -136,4 +132,3 @@ function Header() {
 }
 
 export default Header;
-

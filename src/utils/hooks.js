@@ -75,8 +75,6 @@ export function useHeaderEffects() {
     const header = document.querySelector('.header');
     if (!header) return;
     
-    let lastScroll = 0;
-    
     const handleScroll = () => {
       const currentScroll = window.pageYOffset;
       
@@ -85,8 +83,6 @@ export function useHeaderEffects() {
       } else {
         header.classList.remove('header--scrolled');
       }
-      
-      lastScroll = currentScroll;
     };
     
     const throttledScroll = throttle(handleScroll, 100);
