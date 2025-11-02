@@ -1,115 +1,138 @@
-# Backplane
+# Backplane Enterprise Infrastructure - React Website
 
-<div align="center">
-  <img src="assets/logo.svg" alt="Backplane Logo" width="200"/>
-</div>
+This is a React-based version of the Backplane Enterprise Infrastructure website, converted from the original HTML/CSS/JavaScript implementation.
 
----
+## Features
 
-## About Backplane
+- **Complete Content Migration**: All content from the original website has been preserved
+- **React Router**: Client-side routing for seamless navigation
+- **Responsive Design**: Mobile-first responsive layout
+- **Modern UI**: Dark theme with professional enterprise styling
+- **Accessibility**: WCAG-compliant semantic HTML and ARIA attributes
+- **Performance Optimized**: Smooth scrolling, lazy loading, and optimized animations
 
-Backplane represents the pinnacle of enterprise infrastructure excellence, delivering transformative technology solutions that empower organizations to achieve unprecedented operational sophistication. As a proprietary, closed-source enterprise platform, Backplane combines cutting-edge innovation with unwavering reliability to drive digital transformation across industries.
+## Project Structure
 
-Our comprehensive suite of enterprise-grade solutions is designed for organizations that demand nothing less than excellence. With a commitment to security, scalability, and performance, Backplane stands as the definitive choice for forward-thinking enterprises seeking competitive advantage through superior technology leadership.
+```
+react-website/
+├── public/
+│   ├── assets/          # Images and logos
+│   └── style.css        # Original CSS (imported)
+├── src/
+│   ├── components/
+│   │   ├── Header.jsx   # Site header with navigation
+│   │   └── Footer.jsx   # Site footer
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── About.jsx
+│   │   ├── Pricing.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Services.jsx
+│   │   ├── CloudService.jsx
+│   │   ├── InfrastructureService.jsx
+│   │   ├── NetworkService.jsx
+│   │   ├── SecurityService.jsx
+│   │   ├── DataService.jsx
+│   │   ├── ManagementService.jsx
+│   │   ├── ManagedServicesService.jsx
+│   │   ├── PrivacyPolicy.jsx
+│   │   └── TermsOfService.jsx
+│   ├── utils/
+│   │   └── hooks.js     # Custom React hooks
+│   ├── App.jsx          # Main app component with routing
+│   ├── index.css        # CSS imports
+│   └── main.jsx         # Entry point
+└── package.json
+```
 
----
+## Getting Started
 
-## Our Vision
+### Prerequisites
 
-We envision a future where enterprise technology seamlessly integrates with business objectives, creating unprecedented opportunities for growth, innovation, and operational excellence. Backplane's mission is to bridge the gap between sophisticated technology capabilities and practical business needs, delivering solutions that don't just meet today's requirements but anticipate tomorrow's challenges.
+- Node.js (v16 or higher)
+- npm or yarn
 
-Our commitment extends beyond mere technology provision—we are dedicated to being strategic partners in our clients' success stories, delivering measurable value through innovative solutions that redefine industry standards.
+### Installation
 
----
+```bash
+# Install dependencies
+npm install
 
-## Innovation Excellence
+# Start development server
+npm run dev
 
-Backplane's innovation framework is built on three fundamental pillars:
+# Build for production
+npm run build
 
-**Technological Advancement**: Leveraging state-of-the-art technologies and proprietary methodologies, we continuously push the boundaries of what's possible in enterprise infrastructure. Our research and development initiatives ensure that our clients always have access to the most advanced solutions available.
+# Preview production build
+npm run preview
+```
 
-**Operational Intelligence**: Through sophisticated analytics and intelligent automation, Backplane transforms raw data into actionable insights, enabling organizations to make informed decisions with confidence and precision.
+The development server will start at `http://localhost:5173`
 
-**Strategic Integration**: Our solutions are designed not as standalone products but as integral components of comprehensive enterprise ecosystems, ensuring seamless connectivity and enhanced operational efficiency.
+## Routes
 
----
+- `/` - Home page
+- `/about` - About Us
+- `/pricing` - Pricing plans
+- `/contact` - Contact form
+- `/services` - Services overview
+- `/services/cloud` - Cloud Infrastructure
+- `/services/infrastructure` - IT Infrastructure
+- `/services/network` - Network Solutions
+- `/services/security` - Security Services
+- `/services/data` - Data Management
+- `/services/management` - IT Management
+- `/services/managed-services` - Managed Services
+- `/privacy-policy` - Privacy Policy
+- `/tos` - Terms of Service
 
-## Technology Leadership
+## Technology Stack
 
-Backplane's technology leadership is demonstrated through our unwavering commitment to:
+- **React 19** - UI framework
+- **React Router 7** - Client-side routing
+- **Vite** - Build tool and dev server
+- **Vanilla CSS** - Original styling preserved
 
-### Enterprise Security
-- Military-grade encryption and security protocols
-- Comprehensive compliance frameworks (GDPR, CCPA, SOX)
-- Advanced threat detection and prevention systems
-- Rigorous security audits and continuous monitoring
+## Custom Hooks
 
-### Scalability & Performance
-- Enterprise-level scalability designed for growth
-- Sub-millisecond response times and optimal performance
-- 99.99% uptime guarantees with redundant systems
-- Global infrastructure with strategic geographic distribution
+The application includes custom React hooks for enhanced functionality:
 
-### Innovation-Driven Development
-- Continuous research and development investments
-- Proprietary algorithms and methodologies
-- Industry-leading expertise and thought leadership
-- Forward-thinking approach to emerging technologies
+- `useSmoothScrolling()` - Smooth scroll behavior for anchor links
+- `useScrollAnimations()` - Intersection Observer-based animations
+- `useHeaderEffects()` - Header scroll effects and transitions
 
----
+## Build & Deployment
 
-## Professional Excellence
+```bash
+# Create production build
+npm run build
 
-Our team of world-class professionals brings together decades of combined experience across diverse technology domains. Every Backplane solution is delivered with:
+# Output will be in the 'dist' directory
+# Deploy the 'dist' folder to your hosting service
+```
 
-**Uncompromising Quality**: Our rigorous quality assurance processes ensure that every deliverable meets the highest standards of excellence.
+## Original vs React Migration
 
-**Client-Centric Approach**: We prioritize understanding each client's unique challenges and objectives, delivering tailored solutions that drive tangible results.
+### Preserved
+- ✅ All HTML content and structure
+- ✅ All CSS styling (unchanged)
+- ✅ All page content and copy
+- ✅ All navigation and links
+- ✅ All images and assets
 
-**Strategic Partnership**: Beyond providing technology, we serve as strategic advisors, helping organizations navigate complex digital transformation initiatives.
+### Converted
+- ✅ HTML → JSX (with React Router Links)
+- ✅ Vanilla JS event listeners → React hooks
+- ✅ Multi-page HTML → Single-page React app
+- ✅ Static navigation → React Router
 
-**Continuous Innovation**: Our commitment to innovation ensures that our clients always benefit from the latest advancements in enterprise technology.
+### Improvements
+- ✅ Better performance with code splitting
+- ✅ Faster navigation with client-side routing
+- ✅ Reusable React components
+- ✅ Modern development workflow with Vite
 
----
+## License
 
-## Industry Leadership
-
-Backplane's impact extends across multiple industries, including:
-
-- **Financial Services**: Securing critical financial operations with enterprise-grade reliability
-- **Healthcare**: Protecting sensitive patient data while enabling advanced healthcare technologies
-- **Manufacturing**: Optimizing production processes through intelligent automation and analytics
-- **Technology**: Supporting cutting-edge technology companies with scalable infrastructure solutions
-- **Government**: Meeting stringent regulatory requirements while delivering citizen-focused services
-
----
-
-## Corporate Governance
-
-As a proprietary, closed-source organization, Backplane maintains the highest standards of corporate governance and intellectual property protection. Our approach ensures:
-
-- **Proprietary Innovation**: Our innovative solutions remain protected, ensuring competitive advantage for our clients
-- **Quality Assurance**: Closed-source development allows for rigorous quality control and security measures
-- **Client Confidentiality**: Enhanced data protection through controlled access and proprietary systems
-- **Strategic Control**: Direct control over technology development ensures alignment with client needs
-
----
-
-## Contact & Partnership
-
-For enterprise inquiries, strategic partnerships, or to learn more about Backplane's comprehensive solutions:
-
-**Executive Inquiries**: executives@backplane.com  
-**Partnership Opportunities**: partnerships@backplane.com  
-**Technical Consultations**: solutions@backplane.com  
-
-**Corporate Headquarters**  
-Backplane Technology Solutions  
-[Global Headquarters Address]  
-
----
-
-*Backplane - Where Enterprise Excellence Meets Innovation*
-
-**Confidential and Proprietary**  
-© 2025 Backplane. All rights reserved.
+Copyright © 2025 Backplane. All rights reserved.
