@@ -15,10 +15,11 @@ import ManagementService from './pages/ManagementService';
 import ManagedServicesService from './pages/ManagedServicesService';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
-import { useSmoothScrolling, useScrollAnimations, useHeaderEffects } from './utils/hooks';
+import { useSmoothScrolling, useScrollToTop, useScrollAnimations, useHeaderEffects } from './utils/hooks';
 
 function App() {
-  // Initialize hooks for smooth scrolling, animations, and header effects
+  // Initialize hooks for smooth scrolling, scroll-to-top, animations, and header effects
+  useScrollToTop();
   useSmoothScrolling();
   useScrollAnimations();
   useHeaderEffects();

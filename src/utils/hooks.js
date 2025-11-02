@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 /**
  * Hook to handle smooth scrolling behavior
@@ -25,6 +26,18 @@ export function useSmoothScrolling() {
     document.addEventListener('click', handleClick);
     return () => document.removeEventListener('click', handleClick);
   }, []);
+}
+
+/**
+ * Hook to automatically scroll to top on route changes
+ */
+export function useScrollToTop() {
+  const location = useLocation();
+  
+  useEffect(() => {
+    // Scroll to top when route changes
+    window.scrollTo(0, 0);
+  }, [location]);
 }
 
 /**
