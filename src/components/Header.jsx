@@ -15,7 +15,6 @@ function Header() {
 
   return (
     <>
-      <a href="#main-content" className="skip-link">Skip to main content</a>
       <header className="header" role="banner">
         <div className="container">
           <div className="header__content">

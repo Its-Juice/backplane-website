@@ -6,45 +6,34 @@ function SecurityService() {
       {/* Page Header */}
       <section className="page-header" aria-labelledby="page-title">
         <div className="container">
-          <div className="page-header__content">
-            <nav aria-label="Breadcrumb" className="breadcrumb">
-              <ol className="breadcrumb__list">
-                <li className="breadcrumb__item">
-                  <Link to="/" className="breadcrumb__link">Home</Link>
-                </li>
-                <li className="breadcrumb__item">
-                  <Link to="/services" className="breadcrumb__link">Services</Link>
-                </li>
-                <li className="breadcrumb__item">
-                  <span className="breadcrumb__current" aria-current="page">Security Services</span>
-                </li>
-              </ol>
-            </nav>
+          <header className="page-header__content">
             <h1 id="page-title" className="page-header__title">
               Security <span className="text-accent">Services</span>
             </h1>
             <p className="page-header__description">
-              Advanced security solutions to protect your infrastructure and data from evolving cyber threats and ensure compliance.
+              Advanced security solutions to protect your infrastructure and data from evolving cyber threats.
             </p>
-          </div>
+          </header>
         </div>
       </section>
 
       {/* Service Overview */}
       <section className="service-overview" aria-labelledby="overview-title">
         <div className="container">
+          <header className="service-overview__header">
+            <h2 id="overview-title" className="sr-only">Service Overview</h2>
+          </header>
+          
           <div className="service-overview__content">
             <div className="service-overview__text">
-              <h2 id="overview-title" className="section-title">Enterprise Cybersecurity Solutions</h2>
-              <p className="service-overview__description">
-                Protect your organization with our comprehensive security services designed to defend against evolving cyber threats while ensuring regulatory compliance and business continuity.
-              </p>
-              <p className="service-overview__description">
-                From zero-trust architecture implementation to 24/7 threat monitoring, our security experts provide the protection your enterprise infrastructure demands.
-              </p>
-            </div>
-            <div className="service-overview__cta">
-              <Link to="/contact" className="btn btn--primary btn--large">Get Started Today</Link>
+              <header className="service-overview__text-header">
+                <h2>Enterprise Security Solutions</h2>
+              </header>
+              <div className="service-overview__text-body">
+                <p className="service-overview__description">
+                  Comprehensive cybersecurity solutions that protect your business from emerging threats. Our security-first approach ensures your infrastructure is fortified with enterprise-grade protection while maintaining operational efficiency.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -53,94 +42,63 @@ function SecurityService() {
       {/* Service Features */}
       <section className="service-features" aria-labelledby="features-title">
         <div className="container">
-          <div className="section-header">
-            <h2 id="features-title" className="section-title">What's Included</h2>
-            <p className="section-description">
-              Comprehensive security solutions designed to protect your enterprise from all angles.
-            </p>
-          </div>
-
-          <div className="service-features__grid">
-            <article className="service-feature">
-              <div className="service-feature__icon">
-                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M24 2L42 12v12c0 8-6.5 16-18 20C16.5 40 10 32 10 24V12L24 2z" fill="currentColor" opacity="0.2"/>
-                  <path d="M24 10L34 16v8c0 4-2.7 8-10 10-7.3-2-10-6-10-10v-8l10-6z" fill="currentColor"/>
-                </svg>
+          <header className="service-features__header">
+            <h2 id="features-title" className="sr-only">Service Features</h2>
+          </header>
+          
+          <div className="service-features__grid" role="list">
+            <article className="service-feature" role="listitem">
+              <header className="service-feature__header">
+                <div className="service-feature__icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 2L2 14v20l22 12 22-12V14L24 2z" fill="currentColor" opacity="0.8"/>
+                    <circle cx="24" cy="24" r="8" fill="currentColor"/>
+                  </svg>
+                </div>
+                <h3 className="service-feature__title">Threat Detection</h3>
+              </header>
+              <div className="service-feature__content">
+                <p className="service-feature__description">
+                  Advanced threat detection with real-time monitoring and automated response to security incidents.
+                </p>
               </div>
-              <h3 className="service-feature__title">Threat Detection & Response</h3>
-              <p className="service-feature__description">
-                Advanced threat detection with real-time monitoring, incident response, and automated remediation capabilities.
-              </p>
             </article>
 
-            <article className="service-feature">
-              <div className="service-feature__icon">
-                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="8" y="8" width="32" height="32" rx="4" fill="currentColor" opacity="0.2"/>
-                  <path d="M16 16h16v4H16zm0 8h12v4H16zm0 8h8v4H16z" fill="currentColor"/>
-                  <circle cx="12" cy="20" r="2" fill="#ff4444"/>
-                  <circle cx="12" cy="28" r="2" fill="#ff4444"/>
-                </svg>
+            <article className="service-feature" role="listitem">
+              <header className="service-feature__header">
+                <div className="service-feature__icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" y="8" width="32" height="32" rx="4" fill="currentColor" opacity="0.8"/>
+                    <circle cx="16" cy="16" r="4" fill="currentColor"/>
+                    <circle cx="32" cy="16" r="4" fill="currentColor"/>
+                    <circle cx="16" cy="32" r="4" fill="currentColor"/>
+                    <circle cx="32" cy="32" r="4" fill="currentColor"/>
+                  </svg>
+                </div>
+                <h3 className="service-feature__title">Zero-Trust Architecture</h3>
+              </header>
+              <div className="service-feature__content">
+                <p className="service-feature__description">
+                  Implement zero-trust security models that verify every user and device before granting access.
+                </p>
               </div>
-              <h3 className="service-feature__title">Zero-Trust Architecture</h3>
-              <p className="service-feature__description">
-                Implement comprehensive zero-trust security model with identity verification and least-privilege access controls.
-              </p>
             </article>
 
-            <article className="service-feature">
-              <div className="service-feature__icon">
-                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="24" cy="24" r="16" fill="currentColor" opacity="0.2"/>
-                  <path d="M24 12v12l8 8" stroke="currentColor" strokeWidth="3" fill="none"/>
-                  <circle cx="24" cy="24" r="3" fill="currentColor"/>
-                </svg>
+            <article className="service-feature" role="listitem">
+              <header className="service-feature__header">
+                <div className="service-feature__icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 4L44 12v12c0 8-6.5 16-20 20C14.5 40 8 32 8 24V12L24 4z" fill="currentColor" opacity="0.8"/>
+                    <path d="M24 16L36 20v8c0 4-2.7 8-12 10-9.3-2-12-6-12-10v-8l12-4z" fill="currentColor"/>
+                  </svg>
+                </div>
+                <h3 className="service-feature__title">24/7 Monitoring</h3>
+              </header>
+              <div className="service-feature__content">
+                <p className="service-feature__description">
+                  Round-the-clock security monitoring with expert analysts ready to respond to threats immediately.
+                </p>
               </div>
-              <h3 className="service-feature__title">24/7 Monitoring</h3>
-              <p className="service-feature__description">
-                Round-the-clock security monitoring with SOC (Security Operations Center) and expert threat analysts.
-              </p>
-            </article>
-
-            <article className="service-feature">
-              <div className="service-feature__icon">
-                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="6" y="6" width="36" height="36" rx="4" fill="currentColor" opacity="0.2"/>
-                  <path d="M16 16h16l-2 8H18l-2-8zm8-8h4v4h-4v-4z" fill="currentColor"/>
-                  <circle cx="12" cy="20" r="2" fill="#ffaa00"/>
-                </svg>
-              </div>
-              <h3 className="service-feature__title">Vulnerability Assessments</h3>
-              <p className="service-feature__description">
-                Regular vulnerability scans, penetration testing, and security assessments to identify and address potential weaknesses.
-              </p>
-            </article>
-
-            <article className="service-feature">
-              <div className="service-feature__icon">
-                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M24 4L44 12v12c0 8-6.5 16-20 20C14.5 40 8 32 8 24V12L24 4z" fill="currentColor" opacity="0.8"/>
-                  <circle cx="24" cy="24" r="8" fill="currentColor"/>
-                </svg>
-              </div>
-              <h3 className="service-feature__title">Compliance Management</h3>
-              <p className="service-feature__description">
-                Ensure compliance with industry standards including GDPR, HIPAA, SOX, and other regulatory requirements.
-              </p>
-            </article>
-
-            <article className="service-feature">
-              <div className="service-feature__icon">
-                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="24" cy="24" r="18" fill="currentColor" opacity="0.2"/>
-                  <path d="M20 20h8v8h-8zm4-12h8v4h-8z" fill="currentColor"/>
-                </svg>
-              </div>
-              <h3 className="service-feature__title">Security Awareness Training</h3>
-              <p className="service-feature__description">
-                Comprehensive security training programs to educate employees and reduce human error-related security incidents.
-              </p>
             </article>
           </div>
         </div>
@@ -150,18 +108,22 @@ function SecurityService() {
       <section className="cta" aria-labelledby="cta-title">
         <div className="container">
           <div className="cta__content">
-            <h2 id="cta-title" className="cta__title">Ready to Secure Your Infrastructure?</h2>
-            <p className="cta__description">
-              Schedule a consultation with our security experts to assess your current security posture and develop a comprehensive protection strategy.
-            </p>
-            <div className="cta__actions">
-              <Link to="/contact" className="btn btn--primary">Schedule Consultation</Link>
-              <Link to="/pricing" className="btn btn--outline">View Pricing</Link>
+            <header className="cta__header">
+              <h2 id="cta-title" className="cta__title">Ready to Secure Your Infrastructure?</h2>
+            </header>
+            
+            <div className="cta__body">
+              <p className="cta__description">
+                Let our security experts conduct a comprehensive assessment and implement a robust security strategy for your organization.
+              </p>
             </div>
-            <div className="cta__contact-info">
-              <p className="cta__phone">+1 (800) BACKPLANE</p>
-              <p className="cta__email">security@backplane.com</p>
-            </div>
+            
+            <footer className="cta__actions">
+              <div className="cta__cta-group">
+                <Link to="/contact" className="btn btn--primary">Get Security Assessment</Link>
+                <Link to="/services" className="btn btn--outline">View All Services</Link>
+              </div>
+            </footer>
           </div>
         </div>
       </section>
