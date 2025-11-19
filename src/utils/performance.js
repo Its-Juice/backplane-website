@@ -138,7 +138,7 @@ class PerformanceMonitor {
 
       try {
         resourceObserver.observe({ entryTypes: ['resource'] });
-      } catch (e) {
+      } catch {
         // Fallback for browsers that don't support resource timing
       }
     }

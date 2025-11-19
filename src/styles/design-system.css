@@ -1,0 +1,109 @@
+/* ===============================================
+   Backplane - Next Gen Design System
+   Aesthetics: Cyberpunk / Glassmorphism / Premium Dark
+   =============================================== */
+
+:root {
+    /* 
+     * Color Palette 
+     * Using HSL for easier manipulation and theming
+     */
+    --hue-primary: 250;   /* Deep Purple */
+    --hue-secondary: 190; /* Cyan */
+    --hue-accent: 320;    /* Neon Pink */
+
+    /* Core Colors */
+    --color-bg-deep: hsl(var(--hue-primary), 30%, 4%);
+    --color-bg-surface: hsl(var(--hue-primary), 25%, 8%);
+    --color-bg-surface-2: hsl(var(--hue-primary), 20%, 12%);
+    
+    /* Primary Brand Colors */
+    --color-primary: hsl(var(--hue-primary), 100%, 65%);
+    --color-primary-glow: hsl(var(--hue-primary), 100%, 65%, 0.5);
+    --color-primary-dim: hsl(var(--hue-primary), 60%, 40%);
+
+    /* Secondary Colors */
+    --color-secondary: hsl(var(--hue-secondary), 100%, 50%);
+    --color-secondary-glow: hsl(var(--hue-secondary), 100%, 50%, 0.5);
+
+    /* Accent Colors */
+    --color-accent: hsl(var(--hue-accent), 100%, 60%);
+    --color-accent-glow: hsl(var(--hue-accent), 100%, 60%, 0.5);
+
+    /* Text Colors */
+    --color-text-main: hsl(0, 0%, 100%);
+    --color-text-muted: hsl(var(--hue-primary), 10%, 70%);
+    --color-text-dim: hsl(var(--hue-primary), 10%, 50%);
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    --gradient-glow: linear-gradient(135deg, var(--color-primary-glow), var(--color-secondary-glow));
+    --gradient-dark: linear-gradient(to bottom, var(--color-bg-deep), var(--color-bg-surface));
+    --gradient-glass: linear-gradient(
+        135deg, 
+        rgba(255, 255, 255, 0.05), 
+        rgba(255, 255, 255, 0.01)
+    );
+
+    /* Glassmorphism */
+    --glass-bg: rgba(15, 15, 25, 0.6);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-blur: 12px;
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+    /* Typography */
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-display: 'Outfit', var(--font-sans); /* Assuming we can add Outfit or similar */
+    
+    /* Spacing */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2.5rem;
+    --space-xl: 4rem;
+    --space-2xl: 6rem;
+    --space-3xl: 10rem;
+
+    /* Border Radius */
+    --radius-sm: 0.5rem;
+    --radius-md: 1rem;
+    --radius-lg: 1.5rem;
+    --radius-full: 9999px;
+
+    /* Animations */
+    --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark Mode Defaults */
+body {
+    background-color: var(--color-bg-deep);
+    color: var(--color-text-main);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Selection */
+::selection {
+    background: var(--color-primary);
+    color: white;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-bg-deep);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-bg-surface-2);
+    border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary-dim);
+}

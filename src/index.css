@@ -1,2 +1,9 @@
-/* Import the original CSS file */
-@import url('./assets/style.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+/* Legacy styles - disabled */
+/* @import url('./assets/legacy-style.css'); */
+
+/* New Design System */
+@import url('./styles/design-system.css');
+@import url('./styles/utilities.css');
+/* Keep legacy styles for now, but override them */

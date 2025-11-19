@@ -1,7 +1,0 @@
-- [x] Analyze requirements - Remove blur effect from Dark Veil animation
-- [x] Examine Dark Veil component files to understand current implementation
-- [x] Check for blur, filter, or backdrop effects in CSS files
-- [x] Identify parent divs/sections applying unwanted effects
-- [x] Remove unwanted effects while preserving intended functionality
-- [x] Verify header and footer remain unaffected
-- [x] Test the final implementation

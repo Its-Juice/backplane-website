@@ -12,7 +12,6 @@ export default defineConfig({
           // Separate vendor libraries for better caching
           'react-vendor': ['react', 'react-dom'],
           'router-vendor': ['react-router-dom'],
-          'effects': ['./src/components/effects/GlobalDarkVeil.jsx'],
           'performance': ['web-vitals']
         }
       }

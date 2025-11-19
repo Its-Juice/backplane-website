@@ -1,0 +1,10 @@
+
+> react-website@0.0.0 lint
+> eslint .
+
+
+/home/johnkap/Downloads/backplane-website/src/components/Header.jsx
+  5:9  error  'location' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+

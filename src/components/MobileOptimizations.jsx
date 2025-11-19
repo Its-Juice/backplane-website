@@ -58,7 +58,7 @@ const MobileOptimizations = () => {
     if (deviceInfo.hasTouch) {
       // Add touch-specific CSS classes
       document.body.classList.add('touch-device');
-      
+
       // Optimize tap events
       let lastTouchEnd = 0;
       document.addEventListener('touchend', (event) => {
@@ -74,7 +74,7 @@ const MobileOptimizations = () => {
     if (deviceInfo.isMobile) {
       // Reduce render frequency for better performance
       let ticking = false;
-      
+
       const optimizeScrolling = () => {
         if (!ticking) {
           requestAnimationFrame(() => {
@@ -128,26 +128,31 @@ const MobileOptimizations = () => {
       window.removeEventListener('online', handleOnline);
       window.removeEventListener('offline', handleOffline);
     };
-  }, [networkInfo.effectiveType, deviceInfo.isMobile, deviceInfo.hasTouch]);
+  }, [networkInfo.effectiveType, networkInfo.downlink, networkInfo.saveData, deviceInfo.isMobile, deviceInfo.hasTouch]);
 
   // Offline indicator component
   const OfflineIndicator = () => {
     if (isOnline) return null;
 
     return (
-      <div className="offline-indicator" style={{
+      <div className="offline-indicator glass-panel" style={{
         position: 'fixed',
-        top: '4rem',
-        left: 0,
-        right: 0,
-        background: '#ff6b6b',
+        top: '5rem',
+        left: '50%',
+        transform: 'translateX(-50%)',
+        background: 'rgba(220, 38, 38, 0.8)',
+        backdropFilter: 'blur(8px)',
         color: 'white',
-        padding: '0.5rem',
+        padding: '0.75rem 1.5rem',
+        borderRadius: '9999px',
         textAlign: 'center',
         fontSize: '0.875rem',
-        zIndex: 9999
+        fontWeight: '500',
+        zIndex: 9999,
+        boxShadow: '0 4px 12px rgba(0,0,0,0.2)',
+        border: '1px solid rgba(255,255,255,0.2)'
       }}>
-        📱 You're offline. Some features may be limited.
+        <span role="img" aria-label="offline">📡</span> You're currently offline
       </div>
     );
   };
@@ -205,7 +210,7 @@ const MobileOptimizations = () => {
   return (
     <>
       <OfflineIndicator />
-      <NetworkIndicator />
+      {/* <NetworkIndicator /> */}
     </>
   );
 };

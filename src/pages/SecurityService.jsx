@@ -4,126 +4,91 @@ function SecurityService() {
   return (
     <>
       {/* Page Header */}
-      <section className="page-header" aria-labelledby="page-title">
-        <div className="container">
-          <header className="page-header__content">
-            <h1 id="page-title" className="page-header__title">
-              Security <span className="text-accent">Services</span>
-            </h1>
-            <p className="page-header__description">
-              Advanced security solutions to protect your infrastructure and data from evolving cyber threats.
-            </p>
-          </header>
+      <section className="relative pt-32 pb-20 overflow-hidden">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-red-500 opacity-10 blur-[120px] rounded-full pointer-events-none"></div>
+        <div className="container relative z-10 text-center">
+          <h1 className="text-5xl md:text-6xl font-display font-bold mb-6">
+            Security <span className="text-gradient">Services</span>
+          </h1>
+          <p className="text-xl text-muted max-w-2xl mx-auto">
+            Advanced security solutions to protect your infrastructure and data from evolving cyber threats.
+          </p>
         </div>
       </section>
 
       {/* Service Overview */}
-      <section className="service-overview" aria-labelledby="overview-title">
+      <section className="py-20">
         <div className="container">
-          <header className="service-overview__header">
-            <h2 id="overview-title" className="sr-only">Service Overview</h2>
-          </header>
-          
-          <div className="service-overview__content">
-            <div className="service-overview__text">
-              <header className="service-overview__text-header">
-                <h2>Enterprise Security Solutions</h2>
-              </header>
-              <div className="service-overview__text-body">
-                <p className="service-overview__description">
-                  Comprehensive cybersecurity solutions that protect your business from emerging threats. Our security-first approach ensures your infrastructure is fortified with enterprise-grade protection while maintaining operational efficiency.
-                </p>
-              </div>
+          <div className="glass-panel p-12 rounded-3xl border border-white/10 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-red-500 opacity-10 blur-[80px] rounded-full pointer-events-none"></div>
+            <div className="relative z-10">
+              <h2 className="text-3xl font-bold mb-6 text-white">Enterprise Security Solutions</h2>
+              <p className="text-lg text-muted leading-relaxed max-w-4xl">
+                Comprehensive cybersecurity solutions that protect your business from emerging threats. Our security-first approach ensures your infrastructure is fortified with enterprise-grade protection while maintaining operational efficiency.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Service Features */}
-      <section className="service-features" aria-labelledby="features-title">
+      <section className="py-20">
         <div className="container">
-          <header className="service-features__header">
-            <h2 id="features-title" className="sr-only">Service Features</h2>
-          </header>
-          
-          <div className="service-features__grid" role="list">
-            <article className="service-feature" role="listitem">
-              <header className="service-feature__header">
-                <div className="service-feature__icon" aria-hidden="true">
-                  <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M24 2L2 14v20l22 12 22-12V14L24 2z" fill="currentColor" opacity="0.8"/>
-                    <circle cx="24" cy="24" r="8" fill="currentColor"/>
-                  </svg>
-                </div>
-                <h3 className="service-feature__title">Threat Detection</h3>
-              </header>
-              <div className="service-feature__content">
-                <p className="service-feature__description">
-                  Advanced threat detection with real-time monitoring and automated response to security incidents.
-                </p>
-              </div>
-            </article>
+          <h2 className="text-3xl font-bold mb-12 text-center">Key Capabilities</h2>
 
-            <article className="service-feature" role="listitem">
-              <header className="service-feature__header">
-                <div className="service-feature__icon" aria-hidden="true">
-                  <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="8" y="8" width="32" height="32" rx="4" fill="currentColor" opacity="0.8"/>
-                    <circle cx="16" cy="16" r="4" fill="currentColor"/>
-                    <circle cx="32" cy="16" r="4" fill="currentColor"/>
-                    <circle cx="16" cy="32" r="4" fill="currentColor"/>
-                    <circle cx="32" cy="32" r="4" fill="currentColor"/>
-                  </svg>
-                </div>
-                <h3 className="service-feature__title">Zero-Trust Architecture</h3>
-              </header>
-              <div className="service-feature__content">
-                <p className="service-feature__description">
-                  Implement zero-trust security models that verify every user and device before granting access.
-                </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="glass-panel p-8 rounded-2xl glow-hover neon-border group">
+              <div className="w-14 h-14 rounded-xl bg-red-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-8 h-8 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
               </div>
-            </article>
+              <h3 className="text-xl font-bold mb-4 text-white">Threat Detection</h3>
+              <p className="text-muted">
+                Advanced threat detection with real-time monitoring and automated response to security incidents.
+              </p>
+            </div>
 
-            <article className="service-feature" role="listitem">
-              <header className="service-feature__header">
-                <div className="service-feature__icon" aria-hidden="true">
-                  <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M24 4L44 12v12c0 8-6.5 16-20 20C14.5 40 8 32 8 24V12L24 4z" fill="currentColor" opacity="0.8"/>
-                    <path d="M24 16L36 20v8c0 4-2.7 8-12 10-9.3-2-12-6-12-10v-8l12-4z" fill="currentColor"/>
-                  </svg>
-                </div>
-                <h3 className="service-feature__title">24/7 Monitoring</h3>
-              </header>
-              <div className="service-feature__content">
-                <p className="service-feature__description">
-                  Round-the-clock security monitoring with expert analysts ready to respond to threats immediately.
-                </p>
+            <div className="glass-panel p-8 rounded-2xl glow-hover neon-border group">
+              <div className="w-14 h-14 rounded-xl bg-red-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-8 h-8 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
               </div>
-            </article>
+              <h3 className="text-xl font-bold mb-4 text-white">Zero-Trust Architecture</h3>
+              <p className="text-muted">
+                Implement zero-trust security models that verify every user and device before granting access.
+              </p>
+            </div>
+
+            <div className="glass-panel p-8 rounded-2xl glow-hover neon-border group">
+              <div className="w-14 h-14 rounded-xl bg-red-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-8 h-8 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-4 text-white">24/7 Monitoring</h3>
+              <p className="text-muted">
+                Round-the-clock security monitoring with expert analysts ready to respond to threats immediately.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Call to Action Section */}
-      <section className="cta" aria-labelledby="cta-title">
-        <div className="container">
-          <div className="cta__content">
-            <header className="cta__header">
-              <h2 id="cta-title" className="cta__title">Ready to Secure Your Infrastructure?</h2>
-            </header>
-            
-            <div className="cta__body">
-              <p className="cta__description">
-                Let our security experts conduct a comprehensive assessment and implement a robust security strategy for your organization.
-              </p>
+      <section className="py-20 relative overflow-hidden">
+        <div className="container relative z-10">
+          <div className="glass-panel p-12 rounded-3xl text-center max-w-4xl mx-auto border border-white/10 shadow-2xl">
+            <h2 className="text-4xl font-bold mb-6">Ready to Secure Your Infrastructure?</h2>
+            <p className="text-xl text-muted mb-10">
+              Let our security experts conduct a comprehensive assessment and implement a robust security strategy for your organization.
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <Link to="/contact" className="btn btn-primary text-lg px-8 py-4">Get Security Assessment</Link>
+              <Link to="/services" className="btn btn-glass text-lg px-8 py-4">View All Services</Link>
             </div>
-            
-            <footer className="cta__actions">
-              <div className="cta__cta-group">
-                <Link to="/contact" className="btn btn--primary">Get Security Assessment</Link>
-                <Link to="/services" className="btn btn--outline">View All Services</Link>
-              </div>
-            </footer>
           </div>
         </div>
       </section>

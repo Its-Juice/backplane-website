@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
-import GlobalDarkVeil from './components/effects/GlobalDarkVeil';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import MobileOptimizations from './components/MobileOptimizations';
@@ -49,7 +48,6 @@ const PageLoader = () => (
 function App() {
   return (
     <>
-      <GlobalDarkVeil />
       <MobileOptimizations />
       <Router>
         <div className="App">
