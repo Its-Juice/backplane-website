@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Mail, MapPin, Phone, Clock, MessageSquare, Globe, ArrowRight, HelpCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -131,7 +132,14 @@ export default function Contact() {
 
                     {/* Abstract Map Representation */}
                     <div className="relative max-w-5xl mx-auto aspect-[2/1] rounded-3xl bg-[#050505] border border-white/10 overflow-hidden">
-                        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10"></div>
+                        <Image
+                            src="/assets/world-map.png"
+                            alt="Global Network Map"
+                            fill
+                            className="object-cover opacity-50"
+                        />
+                        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10 mix-blend-overlay"></div>
+
                         {/* Dots representing locations */}
                         {[
                             { top: '30%', left: '20%' }, // NA West
@@ -145,7 +153,7 @@ export default function Contact() {
                                 <div className="absolute inset-0 bg-indigo-500 rounded-full animate-ping opacity-75"></div>
                             </div>
                         ))}
-                        <div className="absolute bottom-6 left-6 text-xs text-gray-500 font-mono">
+                        <div className="absolute bottom-6 left-6 text-xs text-gray-500 font-mono bg-black/50 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
                             STATUS: ALL SYSTEMS OPERATIONAL
                         </div>
                     </div>
