@@ -36,7 +36,7 @@ export default function Contact() {
                                 </div>
                                 <div className="space-y-2">
                                     <label className="text-sm font-medium text-gray-300 ml-1">Email Address</label>
-                                    <input type="email" className="w-full px-6 py-4 rounded-2xl bg-black/20 border border-white/10 text-white focus:outline-none focus:border-indigo-500 transition-colors" placeholder="john@company.com" />
+                                    <input type="email" className="w-full px-6 py-4 rounded-2xl bg-black/20 border border-white/10 text-white focus:outline-none focus:border-indigo-500 transition-colors" placeholder="placeholder@backplane.com" />
                                 </div>
                                 <div className="space-y-2">
                                     <label className="text-sm font-medium text-gray-300 ml-1">Subject</label>
@@ -79,7 +79,7 @@ export default function Contact() {
                                     </div>
                                     <div>
                                         <h3 className="text-xl font-bold text-white mb-2">Phone Support</h3>
-                                        <p className="text-gray-400 mb-1">+1 (800) 123-4567</p>
+                                        <p className="text-gray-400 mb-1">+30 210 6969 420</p>
                                         <p className="text-sm text-gray-500">Mon-Fri, 9am - 6pm PST</p>
                                     </div>
                                 </div>
@@ -90,7 +90,7 @@ export default function Contact() {
                                     </div>
                                     <div>
                                         <h3 className="text-xl font-bold text-white mb-2">General Inquiries</h3>
-                                        <p className="text-gray-400">hello@backplane.com</p>
+                                        <p className="text-gray-400">placeholder@backplane.com</p>
                                     </div>
                                 </div>
                             </div>
@@ -100,10 +100,10 @@ export default function Contact() {
                                 <h3 className="text-2xl font-bold text-white mb-6">Direct Departments</h3>
                                 <div className="grid sm:grid-cols-2 gap-4">
                                     {[
-                                        { name: "Sales Team", email: "sales@backplane.com" },
-                                        { name: "Technical Support", email: "support@backplane.com" },
-                                        { name: "Press & Media", email: "press@backplane.com" },
-                                        { name: "Careers", email: "careers@backplane.com" }
+                                        { name: "Sales Team", email: "placeholder@backplane.com" },
+                                        { name: "Technical Support", email: "placeholder@backplane.com" },
+                                        { name: "Press & Media", email: "placeholder@backplane.com" },
+                                        { name: "Careers", email: "placeholder@backplane.com" }
                                     ].map((dept, i) => (
                                         <a key={i} href={`mailto:${dept.email}`} className="flex items-center justify-between p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors group">
                                             <span className="text-gray-300 font-medium">{dept.name}</span>

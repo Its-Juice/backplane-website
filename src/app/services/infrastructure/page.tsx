@@ -149,7 +149,7 @@ export default function InfrastructureService() {
                         </div>
                         <div className="mt-8 text-sm text-gray-400">
                             <p className="mb-1">Or call us directly:</p>
-                            <p className="text-xl font-bold text-white">+1 (800) BACKPLANE</p>
+                            <p className="text-xl font-bold text-white">+30 210 6969 420</p>
                         </div>
                     </div>
                 </div>

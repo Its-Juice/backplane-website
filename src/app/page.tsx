@@ -331,7 +331,7 @@ export default function Home() {
                                     Start Your Project
                                 </Button>
                             </Link>
-                            <a href="tel:+1-800-BACKPLANE">
+                            <a href="tel:+302106969420">
                                 <Button variant="outline" size="lg" className="rounded-full px-12 py-8 text-lg w-full sm:w-auto border-white/10 bg-white/5 hover:bg-white/10 backdrop-blur-md transition-all hover:-translate-y-1">
                                     Talk to Sales
                                 </Button>
