@@ -1,6 +1,5 @@
-import { MapPin, Phone, Mail, Clock, AlertCircle } from "lucide-react";
+import { Mail, MapPin, Phone, Clock, MessageSquare, Globe, ArrowRight, HelpCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 export default function Contact() {
     return (
@@ -8,184 +7,170 @@ export default function Contact() {
             {/* Page Header */}
             <section className="relative pt-32 pb-20 overflow-hidden px-6">
                 <div className="container mx-auto text-center relative z-10">
-                    <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
-                        Get In <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-blue-500">Touch</span>
+                    <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
+                        Get in <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-blue-500">Touch</span>
                     </h1>
-                    <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-                        Ready to transform your infrastructure? Contact our experts for a free consultation and customized solution proposal.
+                    <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
+                        Have questions about our enterprise solutions? Our team is ready to help you build the future of your infrastructure.
                     </p>
                 </div>
             </section>
 
-            {/* Contact Form and Info */}
+            {/* Main Contact Section */}
             <section className="py-20 px-6">
                 <div className="container mx-auto">
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                    <div className="grid lg:grid-cols-2 gap-16">
                         {/* Contact Form */}
-                        <div className="lg:col-span-2">
-                            <div className="p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-lg">
-                                <h2 className="text-2xl font-bold mb-8 text-white">Send us a Message</h2>
-
-                                <form className="space-y-6" action="mailto:contact@backplane.com" method="post" encType="text/plain" noValidate>
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                        <div>
-                                            <label htmlFor="firstName" className="block text-sm font-medium text-gray-400 mb-2">First Name <span className="text-indigo-400">*</span></label>
-                                            <input type="text" id="firstName" name="firstName" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none transition-colors" required autoComplete="given-name" />
-                                        </div>
-                                        <div>
-                                            <label htmlFor="lastName" className="block text-sm font-medium text-gray-400 mb-2">Last Name <span className="text-indigo-400">*</span></label>
-                                            <input type="text" id="lastName" name="lastName" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none transition-colors" required autoComplete="family-name" />
-                                        </div>
+                        <div className="p-10 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-lg">
+                            <h2 className="text-3xl font-bold mb-8 text-white">Send us a Message</h2>
+                            <form className="space-y-6">
+                                <div className="grid md:grid-cols-2 gap-6">
+                                    <div className="space-y-2">
+                                        <label className="text-sm font-medium text-gray-300 ml-1">First Name</label>
+                                        <input type="text" className="w-full px-6 py-4 rounded-2xl bg-black/20 border border-white/10 text-white focus:outline-none focus:border-indigo-500 transition-colors" placeholder="John" />
                                     </div>
-
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                        <div>
-                                            <label htmlFor="email" className="block text-sm font-medium text-gray-400 mb-2">Email Address <span className="text-indigo-400">*</span></label>
-                                            <input type="email" id="email" name="email" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none transition-colors" required autoComplete="email" />
-                                        </div>
-                                        <div>
-                                            <label htmlFor="phone" className="block text-sm font-medium text-gray-400 mb-2">Phone Number</label>
-                                            <input type="tel" id="phone" name="phone" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none transition-colors" autoComplete="tel" />
-                                        </div>
+                                    <div className="space-y-2">
+                                        <label className="text-sm font-medium text-gray-300 ml-1">Last Name</label>
+                                        <input type="text" className="w-full px-6 py-4 rounded-2xl bg-black/20 border border-white/10 text-white focus:outline-none focus:border-indigo-500 transition-colors" placeholder="Doe" />
                                     </div>
-
-                                    <div>
-                                        <label htmlFor="company" className="block text-sm font-medium text-gray-400 mb-2">Company Name</label>
-                                        <input type="text" id="company" name="company" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none transition-colors" autoComplete="organization" />
-                                    </div>
-
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                        <div>
-                                            <label htmlFor="service" className="block text-sm font-medium text-gray-400 mb-2">Service Interest</label>
-                                            <select id="service" name="service" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none transition-colors appearance-none">
-                                                <option value="" className="bg-gray-900">Select a service</option>
-                                                <option value="cloud-infrastructure" className="bg-gray-900">Cloud Infrastructure</option>
-                                                <option value="network-security" className="bg-gray-900">Network Security</option>
-                                                <option value="data-management" className="bg-gray-900">Data Management</option>
-                                                <option value="managed-services" className="bg-gray-900">Managed Services</option>
-                                                <option value="consulting" className="bg-gray-900">Consulting Services</option>
-                                                <option value="other" className="bg-gray-900">Other</option>
-                                            </select>
-                                        </div>
-                                        <div>
-                                            <label htmlFor="budget" className="block text-sm font-medium text-gray-400 mb-2">Project Budget Range</label>
-                                            <select id="budget" name="budget" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none transition-colors appearance-none">
-                                                <option value="" className="bg-gray-900">Select budget range</option>
-                                                <option value="under-10k" className="bg-gray-900">Under $10,000</option>
-                                                <option value="10k-25k" className="bg-gray-900">$10,000 - $25,000</option>
-                                                <option value="25k-50k" className="bg-gray-900">$25,000 - $50,000</option>
-                                                <option value="50k-100k" className="bg-gray-900">$50,000 - $100,000</option>
-                                                <option value="over-100k" className="bg-gray-900">Over $100,000</option>
-                                                <option value="not-sure" className="bg-gray-900">Not sure</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div>
-                                        <label htmlFor="message" className="block text-sm font-medium text-gray-400 mb-2">Message <span className="text-indigo-400">*</span></label>
-                                        <textarea id="message" name="message" rows={5} className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none transition-colors" required placeholder="Tell us about your project requirements, timeline, and any specific challenges you need to address..."></textarea>
-                                    </div>
-
-                                    <div className="space-y-4">
-                                        <label className="flex items-start gap-3 cursor-pointer group">
-                                            <input type="checkbox" name="newsletter" className="mt-1 w-4 h-4 rounded border-white/10 bg-white/5 text-indigo-500 focus:ring-indigo-500" />
-                                            <span className="text-sm text-gray-400 group-hover:text-white transition-colors">Subscribe to our newsletter for infrastructure insights and company updates</span>
-                                        </label>
-
-                                        <label className="flex items-start gap-3 cursor-pointer group">
-                                            <input type="checkbox" name="privacy" required className="mt-1 w-4 h-4 rounded border-white/10 bg-white/5 text-indigo-500 focus:ring-indigo-500" />
-                                            <span className="text-sm text-gray-400 group-hover:text-white transition-colors">
-                                                I agree to the <Link href="/privacy-policy" className="text-indigo-400 hover:text-indigo-300">Privacy Policy</Link> <span className="text-indigo-400">*</span>
-                                            </span>
-                                        </label>
-                                    </div>
-
-                                    <div className="flex gap-4 pt-4">
-                                        <Button type="submit" size="lg" className="px-8">Send Message</Button>
-                                        <Button type="reset" variant="outline" size="lg" className="px-8">Clear Form</Button>
-                                    </div>
-                                </form>
-                            </div>
+                                </div>
+                                <div className="space-y-2">
+                                    <label className="text-sm font-medium text-gray-300 ml-1">Email Address</label>
+                                    <input type="email" className="w-full px-6 py-4 rounded-2xl bg-black/20 border border-white/10 text-white focus:outline-none focus:border-indigo-500 transition-colors" placeholder="john@company.com" />
+                                </div>
+                                <div className="space-y-2">
+                                    <label className="text-sm font-medium text-gray-300 ml-1">Subject</label>
+                                    <select className="w-full px-6 py-4 rounded-2xl bg-black/20 border border-white/10 text-white focus:outline-none focus:border-indigo-500 transition-colors appearance-none">
+                                        <option>Sales Inquiry</option>
+                                        <option>Technical Support</option>
+                                        <option>Partnership Opportunity</option>
+                                        <option>General Question</option>
+                                    </select>
+                                </div>
+                                <div className="space-y-2">
+                                    <label className="text-sm font-medium text-gray-300 ml-1">Message</label>
+                                    <textarea rows={5} className="w-full px-6 py-4 rounded-2xl bg-black/20 border border-white/10 text-white focus:outline-none focus:border-indigo-500 transition-colors resize-none" placeholder="How can we help you?"></textarea>
+                                </div>
+                                <Button size="lg" className="w-full rounded-2xl py-6 text-lg">Send Message</Button>
+                            </form>
                         </div>
 
-                        {/* Contact Information */}
-                        <div className="space-y-8">
-                            <div className="p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-lg">
-                                <h2 className="text-xl font-bold mb-6 text-white">Contact Information</h2>
-
-                                <div className="space-y-6">
-                                    <div className="flex items-start gap-4">
-                                        <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0">
-                                            <MapPin className="w-5 h-5 text-indigo-400" />
-                                        </div>
-                                        <div>
-                                            <h3 className="font-bold text-white mb-1">Headquarters</h3>
-                                            <p className="text-gray-400 text-sm">
-                                                123 Enterprise Plaza<br />
-                                                Suite 4500<br />
-                                                San Francisco, CA 94105
-                                            </p>
-                                        </div>
+                        {/* Contact Info & Departments */}
+                        <div className="space-y-12">
+                            {/* Quick Info */}
+                            <div className="grid gap-8">
+                                <div className="flex items-start gap-6 p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                                    <div className="w-12 h-12 rounded-xl bg-indigo-500/20 flex items-center justify-center shrink-0">
+                                        <MapPin className="w-6 h-6 text-indigo-400" />
                                     </div>
-
-                                    <div className="flex items-start gap-4">
-                                        <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0">
-                                            <Phone className="w-5 h-5 text-indigo-400" />
-                                        </div>
-                                        <div>
-                                            <h3 className="font-bold text-white mb-1">Phone</h3>
-                                            <p className="text-gray-400 text-sm space-y-1">
-                                                <a href="tel:+1-800-BACKPLANE" className="block hover:text-indigo-400 transition-colors">+1 (800) BACKPLANE</a>
-                                                <a href="tel:+1-415-555-0123" className="block hover:text-indigo-400 transition-colors">+1 (415) 555-0123</a>
-                                            </p>
-                                        </div>
+                                    <div>
+                                        <h3 className="text-xl font-bold text-white mb-2">Headquarters</h3>
+                                        <p className="text-gray-400 leading-relaxed">
+                                            123 Tech Plaza, Suite 400<br />
+                                            San Francisco, CA 94107<br />
+                                            United States
+                                        </p>
                                     </div>
+                                </div>
 
-                                    <div className="flex items-start gap-4">
-                                        <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0">
-                                            <Mail className="w-5 h-5 text-indigo-400" />
-                                        </div>
-                                        <div>
-                                            <h3 className="font-bold text-white mb-1">Email</h3>
-                                            <p className="text-gray-400 text-sm space-y-1">
-                                                <a href="mailto:contact@backplane.com" className="block hover:text-indigo-400 transition-colors">contact@backplane.com</a>
-                                                <a href="mailto:sales@backplane.com" className="block hover:text-indigo-400 transition-colors">sales@backplane.com</a>
-                                                <a href="mailto:support@backplane.com" className="block hover:text-indigo-400 transition-colors">support@backplane.com</a>
-                                            </p>
-                                        </div>
+                                <div className="flex items-start gap-6 p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                                    <div className="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center shrink-0">
+                                        <Phone className="w-6 h-6 text-blue-400" />
                                     </div>
+                                    <div>
+                                        <h3 className="text-xl font-bold text-white mb-2">Phone Support</h3>
+                                        <p className="text-gray-400 mb-1">+1 (800) 123-4567</p>
+                                        <p className="text-sm text-gray-500">Mon-Fri, 9am - 6pm PST</p>
+                                    </div>
+                                </div>
 
-                                    <div className="flex items-start gap-4">
-                                        <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0">
-                                            <Clock className="w-5 h-5 text-indigo-400" />
-                                        </div>
-                                        <div>
-                                            <h3 className="font-bold text-white mb-1">Business Hours</h3>
-                                            <p className="text-gray-400 text-sm">
-                                                Monday - Friday: 8:00 AM - 6:00 PM PST<br />
-                                                Saturday: 10:00 AM - 2:00 PM PST<br />
-                                                Sunday: Closed
-                                            </p>
-                                        </div>
+                                <div className="flex items-start gap-6 p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                                    <div className="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center shrink-0">
+                                        <Mail className="w-6 h-6 text-purple-400" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-xl font-bold text-white mb-2">General Inquiries</h3>
+                                        <p className="text-gray-400">hello@backplane.com</p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div className="p-8 rounded-3xl bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/20 backdrop-blur-lg">
-                                <div className="flex items-center gap-3 mb-4">
-                                    <AlertCircle className="w-6 h-6 text-red-500" />
-                                    <h3 className="text-xl font-bold text-white">Need Immediate Assistance?</h3>
+                            {/* Department Contacts */}
+                            <div>
+                                <h3 className="text-2xl font-bold text-white mb-6">Direct Departments</h3>
+                                <div className="grid sm:grid-cols-2 gap-4">
+                                    {[
+                                        { name: "Sales Team", email: "sales@backplane.com" },
+                                        { name: "Technical Support", email: "support@backplane.com" },
+                                        { name: "Press & Media", email: "press@backplane.com" },
+                                        { name: "Careers", email: "careers@backplane.com" }
+                                    ].map((dept, i) => (
+                                        <a key={i} href={`mailto:${dept.email}`} className="flex items-center justify-between p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors group">
+                                            <span className="text-gray-300 font-medium">{dept.name}</span>
+                                            <ArrowRight className="w-4 h-4 text-gray-500 group-hover:text-white transition-colors" />
+                                        </a>
+                                    ))}
                                 </div>
-                                <p className="text-gray-400 mb-6 text-sm">
-                                    For urgent infrastructure issues, our emergency support is available 24/7.
-                                </p>
-                                <a href="tel:+1-800-BACKPLANE">
-                                    <Button className="w-full bg-red-600 hover:bg-red-700 text-white border-none">
-                                        Call Emergency Support
-                                    </Button>
-                                </a>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Global Presence */}
+            <section className="py-20 px-6 bg-white/[0.02]">
+                <div className="container mx-auto text-center">
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/20 mb-8">
+                        <Globe className="w-4 h-4 text-indigo-400" />
+                        <span className="text-sm text-indigo-300 font-medium">Global Network</span>
+                    </div>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">We Are Everywhere You Need Us</h2>
+                    <p className="text-gray-400 max-w-2xl mx-auto mb-16">
+                        With data centers in 15+ regions and edge locations in 100+ cities, we ensure your data is always close to your users.
+                    </p>
+
+                    {/* Abstract Map Representation */}
+                    <div className="relative max-w-5xl mx-auto aspect-[2/1] rounded-3xl bg-[#050505] border border-white/10 overflow-hidden">
+                        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10"></div>
+                        {/* Dots representing locations */}
+                        {[
+                            { top: '30%', left: '20%' }, // NA West
+                            { top: '35%', left: '28%' }, // NA East
+                            { top: '25%', left: '48%' }, // Europe
+                            { top: '40%', left: '75%' }, // Asia
+                            { top: '65%', left: '85%' }, // Australia
+                            { top: '60%', left: '30%' }, // SA
+                        ].map((pos, i) => (
+                            <div key={i} className="absolute w-3 h-3 bg-indigo-500 rounded-full animate-pulse shadow-[0_0_20px_rgba(99,102,241,0.8)]" style={pos}>
+                                <div className="absolute inset-0 bg-indigo-500 rounded-full animate-ping opacity-75"></div>
+                            </div>
+                        ))}
+                        <div className="absolute bottom-6 left-6 text-xs text-gray-500 font-mono">
+                            STATUS: ALL SYSTEMS OPERATIONAL
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* FAQ Section */}
+            <section className="py-20 px-6">
+                <div className="container mx-auto max-w-3xl">
+                    <h2 className="text-3xl font-bold mb-12 text-center text-white">Frequently Asked Questions</h2>
+                    <div className="space-y-6">
+                        {[
+                            { q: "What is your typical response time?", a: "For enterprise clients with SLA, we guarantee a response within 15 minutes. For standard inquiries, we typically respond within 2-4 hours during business hours." },
+                            { q: "Do you offer 24/7 support?", a: "Yes, our dedicated support team is available 24/7/365 for all critical issues and enterprise customers." },
+                            { q: "Where are your data centers located?", a: "We have primary data centers in North America, Europe, and Asia-Pacific regions, with edge locations globally." },
+                            { q: "Can I schedule a demo?", a: "Absolutely! Use the contact form above to request a personalized demo of our platform tailored to your needs." }
+                        ].map((faq, i) => (
+                            <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                                <h3 className="text-lg font-bold text-white mb-3 flex items-start gap-3">
+                                    <HelpCircle className="w-5 h-5 text-indigo-400 mt-1 shrink-0" />
+                                    {faq.q}
+                                </h3>
+                                <p className="text-gray-400 leading-relaxed pl-8">{faq.a}</p>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>

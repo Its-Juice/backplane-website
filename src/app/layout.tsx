@@ -24,7 +24,7 @@ export default function RootLayout({
             <body className={`${inter.className} ${inter.variable} bg-black text-white min-h-screen flex flex-col`}>
                 <MobileOptimizations />
                 <Navbar />
-                <main className="flex-grow pt-20 relative">
+                <main className="flex-grow relative">
                     {/* Global Background Elements */}
                     <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
                         <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-indigo-500/10 blur-[120px] rounded-full mix-blend-screen"></div>

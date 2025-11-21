@@ -1,9 +1,7 @@
 {
   "/page": "app/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/services/cloud/page": "app/services/cloud/page.js",
-  "/services/managed-services/page": "app/services/managed-services/page.js",
-  "/about/page": "app/about/page.js",
+  "/services/page": "app/services/page.js",
   "/pricing/page": "app/pricing/page.js",
-  "/privacy-policy/page": "app/privacy-policy/page.js"
+  "/about/page": "app/about/page.js",
+  "/contact/page": "app/contact/page.js"
 }
