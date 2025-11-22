@@ -1,4 +1,12 @@
 {
+  "/page": "app/page.js",
   "/contact/page": "app/contact/page.js",
-  "/about/page": "app/about/page.js"
+  "/services/security/page": "app/services/security/page.js",
+  "/partners/page": "app/partners/page.js",
+  "/privacy-policy/page": "app/privacy-policy/page.js",
+  "/pricing/page": "app/pricing/page.js",
+  "/tos/page": "app/tos/page.js",
+  "/services/managed-services/page": "app/services/managed-services/page.js",
+  "/client-onboarding/page": "app/client-onboarding/page.js",
+  "/careers/page": "app/careers/page.js"
 }
