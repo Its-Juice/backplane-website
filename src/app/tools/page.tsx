@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Terminal, Download, Github, Code } from "lucide-react";
+import { Terminal, Download, Github, Code, ArrowRight } from "lucide-react";
 
 export default function ToolsPage() {
     return (

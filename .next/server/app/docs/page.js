@@ -1,0 +1,36 @@
+(()=>{var e={};e.id=726,e.ids=[726],e.modules={7849:e=>{"use strict";e.exports=require("next/dist/client/components/action-async-storage.external")},2934:e=>{"use strict";e.exports=require("next/dist/client/components/action-async-storage.external.js")},5403:e=>{"use strict";e.exports=require("next/dist/client/components/request-async-storage.external")},4580:e=>{"use strict";e.exports=require("next/dist/client/components/request-async-storage.external.js")},4749:e=>{"use strict";e.exports=require("next/dist/client/components/static-generation-async-storage.external")},5869:e=>{"use strict";e.exports=require("next/dist/client/components/static-generation-async-storage.external.js")},399:e=>{"use strict";e.exports=require("next/dist/compiled/next-server/app-page.runtime.prod.js")},3521:(e,t,s)=>{"use strict";s.r(t),s.d(t,{GlobalError:()=>a.a,__next_app__:()=>p,originalPathname:()=>x,pages:()=>d,routeModule:()=>u,tree:()=>c}),s(7670),s(5802),s(5866);var r=s(3191),i=s(8716),n=s(7922),a=s.n(n),o=s(5231),l={};for(let e in o)0>["default","tree","pages","GlobalError","originalPathname","__next_app__","routeModule"].indexOf(e)&&(l[e]=()=>o[e]);s.d(t,l);let c=["",{children:["docs",{children:["__PAGE__",{},{page:[()=>Promise.resolve().then(s.bind(s,7670)),"/home/johnkap/Downloads/backplane-website/src/app/docs/page.tsx"]}]},{}]},{layout:[()=>Promise.resolve().then(s.bind(s,5802)),"/home/johnkap/Downloads/backplane-website/src/app/layout.tsx"],"not-found":[()=>Promise.resolve().then(s.t.bind(s,5866,23)),"next/dist/client/components/not-found-error"]}],d=["/home/johnkap/Downloads/backplane-website/src/app/docs/page.tsx"],x="/docs/page",p={require:s,loadChunk:()=>Promise.resolve()},u=new r.AppPageRouteModule({definition:{kind:i.x.APP_PAGE,page:"/docs/page",pathname:"/docs",bundlePath:"",filename:"",appPaths:[]},userland:{loaderTree:c}})},8290:(e,t,s)=>{Promise.resolve().then(s.t.bind(s,9404,23))},7162:(e,t,s)=>{"use strict";s.d(t,{Z:()=>l});var r=s(1159);/**
+ * @license lucide-react v0.378.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let i=e=>e.replace(/([a-z0-9])([A-Z])/g,"$1-$2").toLowerCase(),n=(...e)=>e.filter((e,t,s)=>!!e&&s.indexOf(e)===t).join(" ");/**
+ * @license lucide-react v0.378.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */var a={xmlns:"http://www.w3.org/2000/svg",width:24,height:24,viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:2,strokeLinecap:"round",strokeLinejoin:"round"};/**
+ * @license lucide-react v0.378.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let o=(0,r.forwardRef)(({color:e="currentColor",size:t=24,strokeWidth:s=2,absoluteStrokeWidth:i,className:o="",children:l,iconNode:c,...d},x)=>(0,r.createElement)("svg",{ref:x,...a,width:t,height:t,stroke:e,strokeWidth:i?24*Number(s)/Number(t):s,className:n("lucide",o),...d},[...c.map(([e,t])=>(0,r.createElement)(e,t)),...Array.isArray(l)?l:[l]])),l=(e,t)=>{let s=(0,r.forwardRef)(({className:s,...a},l)=>(0,r.createElement)(o,{ref:l,iconNode:t,className:n(`lucide-${i(e)}`,s),...a}));return s.displayName=`${e}`,s}},9832:(e,t,s)=>{"use strict";s.d(t,{Z:()=>r});/**
+ * @license lucide-react v0.378.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let r=(0,s(7162).Z)("Search",[["circle",{cx:"11",cy:"11",r:"8",key:"4ej97u"}],["path",{d:"m21 21-4.3-4.3",key:"1qie3q"}]])},2468:(e,t,s)=>{"use strict";s.d(t,{Z:()=>r});/**
+ * @license lucide-react v0.378.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let r=(0,s(7162).Z)("Server",[["rect",{width:"20",height:"8",x:"2",y:"2",rx:"2",ry:"2",key:"ngkwjq"}],["rect",{width:"20",height:"8",x:"2",y:"14",rx:"2",ry:"2",key:"iecqi9"}],["line",{x1:"6",x2:"6.01",y1:"6",y2:"6",key:"16zg32"}],["line",{x1:"6",x2:"6.01",y1:"18",y2:"18",key:"nzw8ys"}]])},3218:(e,t,s)=>{"use strict";s.d(t,{Z:()=>r});/**
+ * @license lucide-react v0.378.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let r=(0,s(7162).Z)("Shield",[["path",{d:"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z",key:"oel41y"}]])},7670:(e,t,s)=>{"use strict";s.r(t),s.d(t,{default:()=>x});var r=s(9510),i=s(7371),n=s(9832),a=s(7162);/**
+ * @license lucide-react v0.378.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let o=(0,a.Z)("Book",[["path",{d:"M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20",key:"t4utmx"}]]),l=(0,a.Z)("Code",[["polyline",{points:"16 18 22 12 16 6",key:"z7tu5w"}],["polyline",{points:"8 6 2 12 8 18",key:"1eg1df"}]]);var c=s(2468),d=s(3218);function x(){return r.jsx("div",{className:"min-h-screen pt-32 pb-20 px-6",children:(0,r.jsxs)("div",{className:"max-w-7xl mx-auto",children:[(0,r.jsxs)("div",{className:"text-center mb-16",children:[r.jsx("h1",{className:"text-4xl md:text-6xl font-bold text-white mb-6",children:"Documentation Hub"}),(0,r.jsxs)("div",{className:"max-w-xl mx-auto relative",children:[r.jsx(n.Z,{className:"absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 w-5 h-5"}),r.jsx("input",{type:"text",placeholder:"Search documentation...",className:"w-full pl-12 pr-4 py-4 rounded-full bg-white/5 border border-white/10 text-white focus:outline-none focus:border-indigo-500 transition-colors"})]})]}),r.jsx("div",{className:"grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20",children:[{title:"Getting Started",icon:r.jsx(o,{className:"w-6 h-6 text-indigo-400"}),links:["Platform Overview","Quick Start Guide","Account Management"]},{title:"API Reference",icon:r.jsx(l,{className:"w-6 h-6 text-pink-400"}),links:["Authentication","Endpoints","Rate Limits","SDKs"]},{title:"Agent Configuration",icon:r.jsx(c.Z,{className:"w-6 h-6 text-blue-400"}),links:["Linux Installation","Windows Installation","Troubleshooting"]},{title:"Security Policies",icon:r.jsx(d.Z,{className:"w-6 h-6 text-green-400"}),links:["Data Retention","Encryption Standards","Compliance"]}].map((e,t)=>(0,r.jsxs)("div",{className:"p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors",children:[(0,r.jsxs)("div",{className:"flex items-center gap-3 mb-4",children:[e.icon,r.jsx("h3",{className:"text-xl font-bold text-white",children:e.title})]}),r.jsx("ul",{className:"space-y-2",children:e.links.map((e,t)=>r.jsx("li",{children:r.jsx(i.default,{href:"#",className:"text-gray-400 hover:text-indigo-300 text-sm transition-colors block py-1",children:e})},t))})]},t))})]})})}}};var t=require("../../webpack-runtime.js");t.C(e);var s=e=>t(t.s=e),r=t.X(0,[311,380],()=>s(3521));module.exports=r})();
